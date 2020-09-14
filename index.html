@@ -24,7 +24,7 @@
     <section id="dashboardBody">
       <section id="sidebar">
         <div id="sidebarSearch">
-          <p>Search for a City:</p>
+          <p><strong>Search for a City:</strong></p>
           <form action="">
             <label for="searchCity"></label>
             <input id="searchCity" type="text" placeholder="Search City..." />
@@ -34,10 +34,21 @@
         <div id="sidebarHistory"></div>
       </section>
       <section id="contents">
-        <div id="contentsWeatherInfo">Atlanta (</div>
-        <div id="contentsGoogleMaps"></div>
+        <contents id="weatherInformation">
+          <div id="contentsCityName">
+            Welcome to Weather Information Center!!!
+          </div>
+          <div id="contentsWeatherInfo">
+            <div id="contentsDescription"></div>
+            <div id="contentsTemperature"></div>
+            <div id="contentsHumidity"></div>
+            <div id="contentsWind"></div>
+          </div>
+        </contents>
+
+        <div id="contentsGoogleMaps" class="invisible"></div>
         <div id="contentsForecast">
-          <div>5-Day</div>
+          <div></div>
         </div>
       </section>
     </section>
@@ -48,6 +59,13 @@
       src="https://code.jquery.com/jquery-3.5.1.js"
       integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
       crossorigin="anonymous"
+    ></script>
+    <!-- Google Maps -->
+    <script
+      async
+      defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCWW92NQe8Yu-8kBJpkb2-Co05o9xEEa9c&callback=initMap"
+      type="text/javascript"
     ></script>
     <!-- javascript -->
     <script type="text/javascript" src="./app.js"></script>

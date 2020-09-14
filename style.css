@@ -21,8 +21,9 @@ ul {
 }
 
 #sidebar {
-  min-width: 230px;
+  min-width: 250px;
   width: 300px;
+  padding: 10px;
   background-color: #bbbbbb;
 }
 
@@ -32,6 +33,7 @@ ul {
 
 #contents {
   width: 1000px;
+  padding: 50px;
   background-color: #cccccc;
 }
 
@@ -46,4 +48,15 @@ ul {
 .sidebarHistoryCities:hover {
   color: #ffffff;
   background-color: #4f99e3;
+}
+
+#weatherInformation {
+  font-weight: bold;
+}
+
+#contentsGoogleMaps {
+  margin-top: 20px;
+  height: 300px;
+  width: 100%;
+  min-width: 400px;
 }
