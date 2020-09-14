@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+#dashboardHeader {
+  background-color: #3d3d3d;
+  color: #ffffff;
+  text-align: center;
+  padding: 10px 0;
+}
+
+#dashboardBody {
+  display: flex;
+  justify-content: center;
+}
+
+#sidebar {
+  min-width: 230px;
+  width: 300px;
+  background-color: #bbbbbb;
+}
+
+#sidebarSearch {
+  margin-bottom: 15px;
+}
+
+#contents {
+  width: 1000px;
+  background-color: #cccccc;
+}
+
+.fa-search {
+  border: white 1px solid;
+  padding: 4px;
+  border-radius: 3px;
+  color: #ffffff;
+  background-color: lightblue;
+}
+
+.sidebarHistoryCities:hover {
+  color: #ffffff;
+  background-color: #4f99e3;
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather Forecast</title>
+    <!-- fontawesome -->
+    <script
+      src="https://kit.fontawesome.com/2c6bbdb178.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <!-- CSS -->
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header id="dashboardHeader"><h1>Weather Dashboard</h1></header>
+    <section id="dashboardBody">
+      <section id="sidebar">
+        <div id="sidebarSearch">
+          <p>Search for a City:</p>
+          <form action="">
+            <label for="searchCity"></label>
+            <input id="searchCity" type="text" placeholder="Search City..." />
+            <a href="#"><i class="fas fa-search"></i></a>
+          </form>
+        </div>
+        <div id="sidebarHistory"></div>
+      </section>
+      <section id="contents">
+        <div id="contentsWeatherInfo">Atlanta (</div>
+        <div id="contentsGoogleMaps"></div>
+        <div id="contentsForecast">
+          <div>5-Day</div>
+        </div>
+      </section>
+    </section>
+
+    <!-- ------------------------------------------------------------------- -->
+    <!-- jquery -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.js"
+      integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+      crossorigin="anonymous"
+    ></script>
+    <!-- javascript -->
+    <script type="text/javascript" src="./app.js"></script>
+  </body>
+</html>
