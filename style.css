@@ -60,3 +60,30 @@ ul {
   width: 100%;
   min-width: 400px;
 }
+
+#contentsForecast {
+  display: flex;
+  justify-content: center;
+  margin-top: 35px;
+}
+
+.card {
+  margin: 0px 1em;
+  min-width: 150px;
+  background-color: #4f99e3;
+}
+
+.card-body {
+  padding: 0px;
+  padding-top: 6px;
+  text-align: center;
+}
+
+.card-title {
+  font-size: 15px;
+  font-weight: bolder;
+}
+
+.list-group-item {
+  text-align: center;
+}

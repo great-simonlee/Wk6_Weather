@@ -24,14 +24,14 @@
     <section id="dashboardBody">
       <section id="sidebar">
         <div id="sidebarSearch">
-          <p><strong>Search for a City:</strong></p>
           <form action="">
-            <label for="searchCity"></label>
+            <label for="searchCity"><strong>Search for a City:</strong></label>
             <input id="searchCity" type="text" placeholder="Search City..." />
-            <a href="#"><i class="fas fa-search"></i></a>
+            <i id="searchCityWeather" class="fas fa-search"></i>
           </form>
         </div>
-        <div id="sidebarHistory"></div>
+        <div id="sidebarLocalstorage"></div>
+        <div id="sidebarHistory"><h5>Major Cities in the US</h5></div>
       </section>
       <section id="contents">
         <contents id="weatherInformation">
@@ -43,12 +43,65 @@
             <div id="contentsTemperature"></div>
             <div id="contentsHumidity"></div>
             <div id="contentsWind"></div>
+            <span id="contentsUVIndex"></span>
           </div>
         </contents>
 
         <div id="contentsGoogleMaps" class="invisible"></div>
-        <div id="contentsForecast">
-          <div></div>
+        <br />
+        <br />
+        <h3 id="contentsForecastTitle" class="invisible">5 Day Forecast:</h3>
+        <div id="contentsForecast" class="invisible">
+          <div class="card">
+            <div class="card-body">
+              <h5 id="forecastTitle0" class="card-title"></h5>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li id="forecastWeather0" class="list-group-item"></li>
+              <li id="forecastTemp0" class="list-group-item"></li>
+              <li id="forecastHum0" class="list-group-item"></li>
+            </ul>
+          </div>
+          <div class="card">
+            <div class="card-body">
+              <h5 id="forecastTitle1" class="card-title"></h5>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li id="forecastWeather1" class="list-group-item"></li>
+              <li id="forecastTemp1" class="list-group-item"></li>
+              <li id="forecastHum1" class="list-group-item"></li>
+            </ul>
+          </div>
+          <div class="card">
+            <div class="card-body">
+              <h5 id="forecastTitle2" class="card-title"></h5>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li id="forecastWeather2" class="list-group-item"></li>
+              <li id="forecastTemp2" class="list-group-item"></li>
+              <li id="forecastHum2" class="list-group-item"></li>
+            </ul>
+          </div>
+          <div class="card">
+            <div class="card-body">
+              <h5 id="forecastTitle3" class="card-title"></h5>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li id="forecastWeather3" class="list-group-item"></li>
+              <li id="forecastTemp3" class="list-group-item"></li>
+              <li id="forecastHum3" class="list-group-item"></li>
+            </ul>
+          </div>
+          <div class="card">
+            <div class="card-body">
+              <h5 id="forecastTitle4" class="card-title"></h5>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li id="forecastWeather4" class="list-group-item"></li>
+              <li id="forecastTemp4" class="list-group-item"></li>
+              <li id="forecastHum4" class="list-group-item"></li>
+            </ul>
+          </div>
         </div>
       </section>
     </section>
