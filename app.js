@@ -19,7 +19,7 @@ function kelvinToFahrenheit(kelvin) {
 
 function cityWeatherSearch(citySearchName) {
   var queryURL =
-    "http://api.openweathermap.org/data/2.5/weather?q=" +
+    "https://api.openweathermap.org/data/2.5/weather?q=" +
     citySearchName +
     "&appid=8293cdf1f821bcf9f4e30739c53476af";
 
